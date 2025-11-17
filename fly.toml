@@ -1,23 +1,12 @@
-app = "your-bot-name-here"  # Change to your preferred app name
+app = "monster-trading-bot"  # Change to your preferred unique name
 
 [build]
   dockerfile = "Dockerfile"
 
-[http_service]
-  internal_port = 8080
-  force_https = true
-  auto_stop_machines = true
-  auto_start_machines = true
-  min_machines_running = 0
-
-[[http_service.checks]]
-  grace_period = "1s"
-  interval = "15s"
-  method = "get"
-  path = "/health"
-  timeout = "2s"
-
 [env]
   LOG_LEVEL = "INFO"
 
-# Optional: Add a small health check endpoint
+[deploy]
+  strategy = "immediate"
+
+# Remove the http_service section since this is a worker app (no web server)
