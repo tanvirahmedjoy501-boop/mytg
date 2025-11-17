@@ -7,9 +7,3 @@ python-dotenv==1.0.0
 aiohttp==3.8.5
 python-dateutil==2.8.2
 pillow==10.0.0
-seaborn==0.12.2
-trading-ta==0.3.1  # Alternative to ta/ta-lib that's easier to install
-setuptools>=68.0
-wheel
-build
-
