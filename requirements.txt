@@ -8,7 +8,7 @@ aiohttp==3.8.5
 python-dateutil==2.8.2
 pillow==10.0.0
 seaborn==0.12.2
-ta-lib==0.4.26  # Fixed: use ta-lib instead of ta
+trading-ta==0.3.1  # Alternative to ta/ta-lib that's easier to install
 setuptools>=68.0
 wheel
 build
